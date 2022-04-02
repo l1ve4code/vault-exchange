@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.filter_screen.FilterScreen"
+    android:background="#EAEAEA">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/all_block"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/s_rounded_block">
+
+        <ImageView
+            android:id="@+id/all_filter_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/all_block"
+            app:layout_constraintLeft_toLeftOf="@id/all_block"
+            app:layout_constraintBottom_toBottomOf="@id/all_block"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_filter"/>
+
+        <TextView
+            android:id="@+id/all_vault_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/all_block"
+            app:layout_constraintBottom_toBottomOf="@id/all_block"
+            app:layout_constraintLeft_toRightOf="@id/all_filter_icon"
+            android:layout_marginStart="15dp"
+            android:textSize="22sp"
+            android:text="All time"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/week_block"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toBottomOf="@id/all_block"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/s_rounded_block">
+
+        <ImageView
+            android:id="@+id/week_money_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/week_block"
+            app:layout_constraintLeft_toLeftOf="@id/week_block"
+            app:layout_constraintBottom_toBottomOf="@id/week_block"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_filter"/>
+
+        <TextView
+            android:id="@+id/week_vault_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/week_block"
+            app:layout_constraintBottom_toBottomOf="@id/week_block"
+            app:layout_constraintLeft_toRightOf="@id/week_money_icon"
+            android:layout_marginStart="15dp"
+            android:textSize="22sp"
+            android:text="A week"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/month_block"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toBottomOf="@id/week_block"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/s_rounded_block">
+
+        <ImageView
+            android:id="@+id/month_money_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/month_block"
+            app:layout_constraintLeft_toLeftOf="@id/month_block"
+            app:layout_constraintBottom_toBottomOf="@id/month_block"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_filter"/>
+
+        <TextView
+            android:id="@+id/month_vault_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/month_block"
+            app:layout_constraintBottom_toBottomOf="@id/month_block"
+            app:layout_constraintLeft_toRightOf="@id/month_money_icon"
+            android:layout_marginStart="15dp"
+            android:textSize="22sp"
+            android:text="A month"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/date_block"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toBottomOf="@id/month_block"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/s_rounded_block">
+
+        <ImageView
+            android:id="@+id/money_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/date_block"
+            app:layout_constraintLeft_toLeftOf="@id/date_block"
+            app:layout_constraintBottom_toBottomOf="@id/date_block"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_filter"/>
+
+        <TextView
+            android:id="@+id/vault_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/date_block"
+            app:layout_constraintBottom_toBottomOf="@id/date_block"
+            app:layout_constraintLeft_toRightOf="@id/money_icon"
+            android:layout_marginStart="15dp"
+            android:textSize="22sp"
+            android:text="Date"/>
+
+        <EditText
+            android:id="@+id/from_date"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/date_block"
+            app:layout_constraintLeft_toLeftOf="@id/vault_name"
+            app:layout_constraintBottom_toTopOf="@id/to_date"
+            app:layout_constraintRight_toRightOf="@id/date_block"
+            android:hint="01/03/2022"/>
+        <EditText
+            android:id="@+id/to_date"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/from_date"
+            app:layout_constraintLeft_toLeftOf="@id/vault_name"
+            app:layout_constraintBottom_toBottomOf="@id/date_block"
+            app:layout_constraintRight_toRightOf="@id/date_block"
+            android:hint="01/03/2023"/>
+        <ImageView
+            android:id="@+id/select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_box"
+            app:layout_constraintRight_toRightOf="@id/date_block"
+            app:layout_constraintTop_toTopOf="@id/date_block"
+            app:layout_constraintBottom_toBottomOf="@id/date_block"
+            android:layout_marginEnd="30dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
